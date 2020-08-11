@@ -9,14 +9,11 @@
 
 
 // MARK: - Algo
-void sayHi(char name[], int age) {
-    printf("Hello %s\n", name);
-    printf("So, you are %d\n", age);
-};
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    sayHi("Juan", 19);
+    FILE *fp;
+    fp  = fopen ("data2.txt", "w");
     return 0;
 }
 

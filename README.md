@@ -1,7 +1,5 @@
 # c-LearningC
 
-
-
 [TOC]
 
 ## Declaring Variables / Constants
@@ -125,7 +123,7 @@ printf("%f\n", numbers[0]); // 100.0
 ## Functions
 
 ```c
-returnType Name (parameters) { ... };
+returnType Name (parameters) { ...; return returnType };
 ```
 
 ```c
