@@ -13,7 +13,7 @@
 int main(int argc, const char * argv[]) {
     // insert code here...
     FILE *fp;
-    fp  = fopen ("data2.txt", "w");
+    fp  = fopen ("/Users/alejandro/CTestData.txt", "w");
     return 0;
 }
 
