@@ -8,9 +8,15 @@
 #include <stdio.h>
 
 
+// MARK: - Algo
+void sayHi(char name[], int age) {
+    printf("Hello %s\n", name);
+    printf("So, you are %d\n", age);
+};
+
 int main(int argc, const char * argv[]) {
     // insert code here...
-    printf("Hello, World!\n");
-    printf("Lol\n");
+    sayHi("Juan", 19);
     return 0;
 }
+
