@@ -37,11 +37,11 @@ char *blackSlashPrint() {
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    char string[1000];
-    strcat(string, "Hola ");
-    strcat(string, "Amigo\n");
-    printf("%s", string); // Hola Amigo
-    printf("%s\n", blackSlashPrint());
+    char name[10] = "Sofia";
+    
+    
+    printf("%010s", name);
     return 0;
 };
 
+void hola() { };

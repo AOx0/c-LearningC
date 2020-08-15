@@ -19,7 +19,7 @@ float pi = 3.1416
 
 
 
-## String formatting
+## Format specification: String formatting
 
 | Data Type | String Char                         | Representation |
 | --------- | ----------------------------------- | -------------- |
@@ -29,18 +29,69 @@ float pi = 3.1416
 | Float     | %f                                  | 12.123         |
 | Double    | %lf **(scanf)**     %f **(printf)** | 12.234366345   |
 
-### Concatenate Strings
+### Field Widht
+
+#### Alphabetical 
+
+```
+"%[Int]String"
+```
+
+#### Numerical
+
+```
+"%[0][Int][.Int]DataType"                    Example - "%0100.4f"
+```
+
+
+
+In all cases between % and the data char identifier a ***field widht*** can be specified to print only a custom width
+
+```c
+const char hola[] = "Hola Amigos";
+printf("%2s\n", hola); //Hola Amigos
+printf("%-2s\n", hola); //Hola Amigos
+
+printf("%20s\n", hola); //         Hola Amigos
+// Spaces are rquired to fullfill the "field with" so it prints them like spaces
+```
+
+```c
+const double n = 124231.2321312;
+
+printf("%f \n", n);			//124231.2321312
+printf("%.2f \n", n); 	//124231.23
+printf("%20.3f \n", n);	//      124231.232
+printf("%020.5f \n", n);	//000000124231.23213
+```
+
+
+
+### Concatenate Strings : strcat
 
 To concatenate strings the **strcat(** char \***string1**, const char \***string2** **)** function is very useful. Available with **\#include <string.h>**
 
 - **string1** is the destintaion string, the one we want to modify.
-- **string2** is the string we want to add to string1
+- **string2** is the string we want to **add** to string1
 
 ```c
 char string[20];
 strcat(string, "Hola ");
 strcat(string, "Amigo\n");
 printf("%s", string); // Hola Amigo
+```
+
+### Modify Strings : strcpy
+
+Yo can modify a string using **strcpy(** char \***string1**, const char \***string2** **)**. Available with **\#include <string.h>**
+
+- **string1** is the destintaion string, the one we want to modify.
+- **string2** is the string we want to **store** in string1
+
+```c
+char name[10] = "Sofia";
+name = "Lol"; //Invalid
+strcpy(name, "Lol"); //Valid
 ```
 
 
