@@ -29,6 +29,20 @@ float pi = 3.1416
 | Float     | %f                                  | 12.123         |
 | Double    | %lf **(scanf)**     %f **(printf)** | 12.234366345   |
 
+### Concatenate Strings
+
+To concatenate strings the **strcat(** char \***string1**, const char \***string2** **)** function is very useful. Available with **\#include <string.h>**
+
+- **string1** is the destintaion string, the one we want to modify.
+- **string2** is the string we want to add to string1
+
+```c
+char string[20];
+strcat(string, "Hola ");
+strcat(string, "Amigo\n");
+printf("%s", string); // Hola Amigo
+```
+
 
 
 ## Input
