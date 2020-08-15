@@ -65,9 +65,8 @@
 			isa = PBXGroup;
 			children = (
 				A9F407EB24E291E000B7A077 /* main.swift */,
-				A9F407FA24E29A9200B7A077 /* GenericMain */,
-				A9F407F924E29A6F00B7A077 /* CreateFile */,
 				A9F407F524E2922100B7A077 /* C2Swift-Bridging-Header.h */,
+				A9F407FE24E2B44500B7A077 /* C */,
 			);
 			path = C2Swift;
 			sourceTree = "<group>";
@@ -88,6 +87,15 @@
 				A9F407FC24E29AAF00B7A077 /* GenericFunc.c */,
 			);
 			path = GenericMain;
+			sourceTree = "<group>";
+		};
+		A9F407FE24E2B44500B7A077 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				A9F407FA24E29A9200B7A077 /* GenericMain */,
+				A9F407F924E29A6F00B7A077 /* CreateFile */,
+			);
+			path = C;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

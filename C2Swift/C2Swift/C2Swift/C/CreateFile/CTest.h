@@ -10,6 +10,7 @@
 
 #include <stdio.h>
 
-void createFile(const char* path);
+void im_wF(const char* path, const char* contents);
+const char* im_rF(const char* path);
 
 #endif /* CTest_h */
