@@ -8,6 +8,8 @@
 #include <stdio.h>
 #include <string.h>
 
+#include "payroll.h"
+
 
 // MARK: - Algo
 
@@ -35,12 +37,36 @@ char *blackSlashPrint() {
     return text;
 }
 
+void writeTextToFile(char path[]) {
+    FILE * in = fopen(path, "w");
+    
+    fprintf(in, "Contenidooooooooooooo1\n");
+    fprintf(in, "Contenidooooooooooooo2\n");
+    fprintf(in, "Contenidooooooooooooo3\n");
+    fprintf(in, "Contenidooooooooooooo4\n");
+    fprintf(in, "end\n");
+    fclose(in);
+}
+
+char *readTextFromFile(char path[]) {
+    FILE * fp = fopen(path, "r");
+    static char text[1000];
+    while (1 == 1) {
+        char element[100];
+        fscanf(fp,"%s", element);
+        if (strcmp(element, "end") == 0) { break; };
+        strcat(element, "\n");
+        strcat(text, element);
+    }
+    
+    fclose(fp);
+    
+    return text;
+}
+
 int main(int argc, const char * argv[]) {
     // insert code here...
-    char name[10] = "Sofia";
-    
-    
-    printf("%010s", name);
+    printHello();
     return 0;
 };
 

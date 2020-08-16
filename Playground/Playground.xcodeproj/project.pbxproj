@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A924970124E8E007007232DC /* payroll.c in Sources */ = {isa = PBXBuildFile; fileRef = A924970024E8E007007232DC /* payroll.c */; };
 		A9F407D924DFEFA700B7A077 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = A9F407D824DFEFA700B7A077 /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A92496FF24E8E007007232DC /* payroll.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = payroll.h; sourceTree = "<group>"; };
+		A924970024E8E007007232DC /* payroll.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = payroll.c; sourceTree = "<group>"; };
 		A9F407D524DFEFA700B7A077 /* Playground */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Playground; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9F407D824DFEFA700B7A077 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				A9F407D824DFEFA700B7A077 /* main.c */,
+				A92496FF24E8E007007232DC /* payroll.h */,
+				A924970024E8E007007232DC /* payroll.c */,
 			);
 			path = Playground;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9F407D924DFEFA700B7A077 /* main.c in Sources */,
+				A924970124E8E007007232DC /* payroll.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
