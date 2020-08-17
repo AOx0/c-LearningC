@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A924970124E8E007007232DC /* payroll.c in Sources */ = {isa = PBXBuildFile; fileRef = A924970024E8E007007232DC /* payroll.c */; };
+		A924970624E8F15A007232DC /* extras.c in Sources */ = {isa = PBXBuildFile; fileRef = A924970524E8F15A007232DC /* extras.c */; };
+		A924970A24E8F49B007232DC /* multiplicates.c in Sources */ = {isa = PBXBuildFile; fileRef = A924970924E8F49B007232DC /* multiplicates.c */; };
 		A9F407D924DFEFA700B7A077 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = A9F407D824DFEFA700B7A077 /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +28,10 @@
 /* Begin PBXFileReference section */
 		A92496FF24E8E007007232DC /* payroll.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = payroll.h; sourceTree = "<group>"; };
 		A924970024E8E007007232DC /* payroll.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = payroll.c; sourceTree = "<group>"; };
+		A924970424E8F15A007232DC /* extras.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = extras.h; sourceTree = "<group>"; };
+		A924970524E8F15A007232DC /* extras.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = extras.c; sourceTree = "<group>"; };
+		A924970824E8F49B007232DC /* multiplicates.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = multiplicates.h; sourceTree = "<group>"; };
+		A924970924E8F49B007232DC /* multiplicates.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = multiplicates.c; sourceTree = "<group>"; };
 		A9F407D524DFEFA700B7A077 /* Playground */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Playground; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9F407D824DFEFA700B7A077 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -41,6 +47,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A924970224E8F135007232DC /* Payroll */ = {
+			isa = PBXGroup;
+			children = (
+				A92496FF24E8E007007232DC /* payroll.h */,
+				A924970024E8E007007232DC /* payroll.c */,
+			);
+			path = Payroll;
+			sourceTree = "<group>";
+		};
+		A924970324E8F13F007232DC /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				A924970424E8F15A007232DC /* extras.h */,
+				A924970524E8F15A007232DC /* extras.c */,
+			);
+			path = Extras;
+			sourceTree = "<group>";
+		};
+		A924970724E8F47A007232DC /* Multiplication */ = {
+			isa = PBXGroup;
+			children = (
+				A924970824E8F49B007232DC /* multiplicates.h */,
+				A924970924E8F49B007232DC /* multiplicates.c */,
+			);
+			path = Multiplication;
+			sourceTree = "<group>";
+		};
 		A9F407CC24DFEFA700B7A077 = {
 			isa = PBXGroup;
 			children = (
@@ -61,8 +94,9 @@
 			isa = PBXGroup;
 			children = (
 				A9F407D824DFEFA700B7A077 /* main.c */,
-				A92496FF24E8E007007232DC /* payroll.h */,
-				A924970024E8E007007232DC /* payroll.c */,
+				A924970724E8F47A007232DC /* Multiplication */,
+				A924970324E8F13F007232DC /* Extras */,
+				A924970224E8F135007232DC /* Payroll */,
 			);
 			path = Playground;
 			sourceTree = "<group>";
@@ -123,8 +157,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A924970A24E8F49B007232DC /* multiplicates.c in Sources */,
 				A9F407D924DFEFA700B7A077 /* main.c in Sources */,
 				A924970124E8E007007232DC /* payroll.c in Sources */,
+				A924970624E8F15A007232DC /* extras.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,66 +8,17 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "payroll.h"
+
+#include "multiplicates.h"
 
 
-// MARK: - Algo
-
-char *songLetter() {
-    static char letter[1000];
-    
-    strcat(letter, "Quiero un abrazo sincero,\n");
-    strcat(letter, "de un amigo, de un obrero,\n");
-    strcat(letter, "\nQuiero que el día de hoy\n");
-    strcat(letter, "todos te digan te quiero\n");
-    strcat(letter, "un te quiero de verdad\n");
-    strcat(letter, "no porque la publicidad\n");
-    strcat(letter, "diga que me debes amar\n");
-    strcat(letter, "más el 14 de febrero\n");
-    strcat(letter, "\nNo voy a los eventos de ahora\n");
-    strcat(letter, "pues aporto mas\n");
-    strcat(letter, "ayudando al vecino a techar su purificadora\n");
-    strcat(letter, "\n");
-    
-    return letter;
-};
-
-char *blackSlashPrint() {
-    static char text[] = "An escape sequence starts with \\";
-    return text;
-}
-
-void writeTextToFile(char path[]) {
-    FILE * in = fopen(path, "w");
-    
-    fprintf(in, "Contenidooooooooooooo1\n");
-    fprintf(in, "Contenidooooooooooooo2\n");
-    fprintf(in, "Contenidooooooooooooo3\n");
-    fprintf(in, "Contenidooooooooooooo4\n");
-    fprintf(in, "end\n");
-    fclose(in);
-}
-
-char *readTextFromFile(char path[]) {
-    FILE * fp = fopen(path, "r");
-    static char text[1000];
-    while (1 == 1) {
-        char element[100];
-        fscanf(fp,"%s", element);
-        if (strcmp(element, "end") == 0) { break; };
-        strcat(element, "\n");
-        strcat(text, element);
-    }
-    
-    fclose(fp);
-    
-    return text;
-}
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printHello();
+    printf("%4d %4d %4d %4d %4d %4d %4d %4d %4d %4d %4d %4d\n",0, 1024, 512, 256, 128, 64, 32, 16, 8, 4, 2, 1);
+    printf("%2d = %4d %4d %4d %4d %4d %4d %4d %4d %4d %4d %4d\n",0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1);
+    
+    printf("%4.0f %6.4f %6.4f %6.4f %6.3f %6.2f\n",0.0, 0.0156, 0.0312, 0.0625, 0.125, 0.25);
+    printf("%2.0f = %6.4f %6.4f %6.4f %6.3f %6.2f\n",0.0, 0.0156, 0.0312, 0.0625, 0.125, 0.25);
+    
     return 0;
 };
-
-void hola() { };

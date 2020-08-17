@@ -251,6 +251,30 @@ while (expression) {
 }
 ```
 
+### For
+
+```c
+for (expression1;expression2;expression3) {
+	...
+    //Be aware of scope of variables
+}
+```
+
+### Do ... While
+
+There are situations in which it is convenient to have a loop **executed at least once.**
+
+1. <statement> is executed
+2. <expression> is then evaluated; if it is true (non-zero), repeat from step
+   1. If it is false (zero), execution continues with the statement, if any, after the semicolon.
+
+```c
+do {
+	...
+} while ( expression ); //Execute while expression is valid
+//Executes at least one time
+```
+
 
 
 ## Input
